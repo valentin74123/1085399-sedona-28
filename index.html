@@ -115,10 +115,25 @@
     <section>
       <h2>Поиск гостиницы в Седоне</h2>
       <!--ФОРМА ПОИСКА ГОСТИНИЦЫ-->
-        <p>Дата заезда:</p>
-        <p>Дата выезда:</p>
-        <p>Взрослые: Дети:</p>
-      <button type="button">Найти</button>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label for="arrival-date">Дата заезда:</label>
+          <input type="text" id="arrival-date" name="arrival-date" placeholder="24 Апреля 2017">
+        </p>
+        <p>
+          <label for="departure-date">Дата выезда:</label>
+          <input type="text" id="departure-date" name="departure-date" placeholder="4 Июля 2017">
+        </p>
+        <p> 
+          <label for="adults">Взрослые:</label> 
+          <input type="number" id="adults" name="adults" min="1">
+        </p>
+        <p>
+          <label for="children">Дети:</label>
+          <input type="number" id="children" name="children" min="0">
+        </p>
+        <button type="submit">Найти</button>
+      </form>
     </section>
 
   </body>
