@@ -23,6 +23,56 @@
        <h2>Критерии жилья</h2>
        <img src="img/background-catalog.jpg" alt="">
        <!--Форма критериев жилья--> 
+       <form action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" id="filter-pool" name="pool" checked>
+              <label for="filter-pool">Бассейн</label>
+            </li>
+            <li>
+              <input type="checkbox" id="filter-parking" name="parking">
+              <label for="filter-parking">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" id="filter-wi-fi" name="wi-fi">
+              <label for="filter-wi-fi">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" id="filter-hotel" name="hotel" checked>
+              <label for="filter-hotel">Гостиница</label>
+            </li>
+            <li>
+              <input type="checkbox" id="filter-motel" name="motel" checked>
+              <label for="filter-motel">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" id="filter-apartments" name="apartments" checked>
+              <label for="filter-apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки (р):</legend>
+          <p>
+            <label for="min-cost">От</label>
+            <input type="text" id="min-cost" name="min-cost" value="0">
+
+            <label for="max-cost">До</label>
+            <input type="text" id="max-cost" name="max-cost" value="3000">
+          </p>
+          <p>
+            <input type="range" id="cost" name="cost" min="0" max="4000" value="3000">
+          </p>
+          <p><button type="submit">Показать</button></p>
+        </fieldset>
+      </form>
       </section>
       <section>
         <p>Найдено:</p>
