@@ -1,0 +1,241 @@
+:root {
+  --basic-light-white: #FFFFFF;
+  --basic-white: #F2F2F2;
+  --basic-dark-white: #EBEBEB;
+  --basic-dark-white2: #EEEEEE;
+  --basic-light-blue: #81B3D2;
+  --basic-blue: #669EC0;
+  --basic-dark-blue: #5496BD;
+  --basic-light-gray: #BDBBBC;
+  --basic-light-gray2: #E5E5E5;
+  --basic-gray: #A9A9A9;
+  --basic-dark-gray: #CACACA;
+  --basic-light-brown: #766357;
+  --basic-brown: #604E43;
+  --basic-dark-brown: #503E33;
+  --basic-light-black: #6A6A6A;
+  --basic-light-black2: #666666;
+  --basic-black: #333333;
+  --basic-dark-black: #000000;
+  --basic-dark-black2: #231F20;
+}
+
+body {
+  min-width: 1280px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-light-white);
+  background-image: url("../img/bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  line-height: 20px;
+  color: var(--basic-dark-black);
+  background-color: transparent;
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-light-white);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-light-white);
+}
+
+.site-navigation a {
+  color: var(--basic-dark-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: var(--basic-light-brown);
+}
+
+.sedona {
+  text-align: center;
+  line-height: 21px;
+}
+
+h2 {
+  color: var(--basic-dark-black);
+  font-size: 21px;
+}
+
+.reasons {
+  list-style: none;
+}
+
+.first-reason,
+.second-reason {
+  color: var(--basic-light-white);
+  background-color: var(--basic-light-blue);
+  text-align: center;
+  line-height: 21px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+
+.photo-sedona,
+.photo-bridge {
+  background-color: var(--basic-light-black);
+}
+
+.about-sedona {
+  text-align: center;
+  list-style: none;
+  line-height: 21px;
+}
+
+.about-sedona h3 {
+  color: var(--basic-dark-black);
+}
+
+.resons-tff {
+  background-color: var(--basic-dark-white2);
+  text-align: center;
+  line-height: 21px;
+}
+
+.alleged-dates {
+  text-align: center;
+  line-height: 24px;
+}
+
+.interested-in {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--basic-dark-black);
+}
+
+.button-first {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-light-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-light-brown);
+  border: none;
+}
+
+.button-first:hover,
+.button-first:focus {
+  background-color: var(--basic-brown);
+}
+
+.button-first:active {
+  background-color: var(--basic-dark-brown);
+}
+
+.date-form {
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.date-form input[type="text"],
+.date-form input[type="number"] {
+  font: inherit;
+  color: var(--basic-dark-black);
+  text-transform: uppercase;
+}
+
+.date-item input {
+  font: inherit;
+  background-color: var(--basic-white);
+}
+
+.date-item input:hover {
+  background-color: var(--basic-dark-white);
+}
+
+.date-item input:focus {
+  background-color: transparent;
+  border: 2px solid var(--basic-light-gray2);
+}
+
+.icon-calendar {
+  background-image: url("img/calendar.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.button-second {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-light-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-light-blue);
+  border: none;
+}
+
+.button-second:hover,
+.button-second:focus {
+  background-color: var(--basic-blue);
+}
+
+.button-second:active {
+  background-color: var(--basic-dark-blue);
+}
+
+.info {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-dark-black);
+}
+
+.info a {
+  color: var(--basic-dark-black);
+}
+
+.logo-academy {
+  width: 115px; 
+  height: 41px;
+  fill: var(--basic-dark-black2);
+}
+
+.logo-academy:hover,
+.logo-academy:focus {
+  fill: var(--basic-light-blue);
+}
+
+.logo-academy:active { 
+  fill: var(--basic-light-gray);
+}
+
+.calendar {
+  fill: var(--basic-gray);
+}
+
+.calendar:hover,
+.calendar:focus {
+  fill: var(--basic-dark-black);
+}
+
+.calendar:active {
+  fill: var(--basic-light-blue);
+}
