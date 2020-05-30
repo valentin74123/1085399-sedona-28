@@ -24,14 +24,13 @@ body {
   min-width: 1280px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-light-white);
-  background-image: url("../img/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -48,7 +47,6 @@ img {
 .main-navigation {
   line-height: 20px;
   color: var(--basic-dark-black);
-  background-color: transparent;
 }
 
 .main-navigation-wrapper {
@@ -57,10 +55,8 @@ img {
 
 .site-navigation {
   list-style: none;
-}
-
-.site-navigation-current a:not([href]) {
-  background-color: var(--basic-light-white);
+  margin: 0px;
+  padding: 0px;
 }
 
 .site-navigation a {
@@ -77,7 +73,7 @@ img {
   line-height: 21px;
 }
 
-h2 {
+.sedona-description h2 {
   color: var(--basic-dark-black);
   font-size: 21px;
 }
@@ -86,8 +82,7 @@ h2 {
   list-style: none;
 }
 
-.first-reason,
-.second-reason {
+.reason {
   color: var(--basic-light-white);
   background-color: var(--basic-light-blue);
   text-align: center;
@@ -99,11 +94,6 @@ h3 {
 }
 
 
-.photo-sedona,
-.photo-bridge {
-  background-color: var(--basic-light-black);
-}
-
 .about-sedona {
   text-align: center;
   list-style: none;
@@ -114,7 +104,7 @@ h3 {
   color: var(--basic-dark-black);
 }
 
-.resons-tff {
+.resons-third-fourth-fifth {
   background-color: var(--basic-dark-white2);
   text-align: center;
   line-height: 21px;
@@ -131,22 +121,22 @@ h3 {
   color: var(--basic-dark-black);
 }
 
-.button-first {
+.button-brown {
   font: inherit;
   text-align: center;
   color: var(--basic-light-white);
-  vertical-align: middle;
+  
   text-transform: uppercase;
   background-color: var(--basic-light-brown);
   border: none;
 }
 
-.button-first:hover,
-.button-first:focus {
+.button-brown:hover,
+.button-brown:focus {
   background-color: var(--basic-brown);
 }
 
-.button-first:active {
+.button-brown:active {
   background-color: var(--basic-dark-brown);
 }
 
@@ -176,28 +166,21 @@ h3 {
   border: 2px solid var(--basic-light-gray2);
 }
 
-.icon-calendar {
-  background-image: url("img/calendar.svg");
-  background-position: right;
-  background-repeat: no-repeat;
-}
-
-.button-second {
+.button-light-blue {
   font: inherit;
   text-align: center;
   color: var(--basic-light-white);
-  vertical-align: middle;
   text-transform: uppercase;
   background-color: var(--basic-light-blue);
   border: none;
 }
 
-.button-second:hover,
-.button-second:focus {
+.button-light-blue:hover,
+.button-light-blue:focus {
   background-color: var(--basic-blue);
 }
 
-.button-second:active {
+.button-light-blue:active {
   background-color: var(--basic-dark-blue);
 }
 
@@ -210,6 +193,24 @@ h3 {
 
 .info a {
   color: var(--basic-dark-black);
+}
+
+.social-item {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-light-white);
+  text-transform: uppercase;
+  background-color: var(--basic-light-blue);
+  border: none;
+}
+
+.social-item:hover,
+.social-item:focus{
+  background-color: var(--basic-blue);
+}
+
+.social-item:active {
+  background-color: var(--basic-dark-blue);
 }
 
 .logo-academy {
