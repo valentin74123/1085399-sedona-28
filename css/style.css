@@ -247,3 +247,121 @@ img {
 .calendar:active {
   fill: var(--basic-light-blue);
 }
+
+.criterion {
+  color: var(--basic-light-white); 
+  /*  background-image: url(img/background-catalog.jpg); */
+  background-color: var(--basic-light-blue);
+  line-height: 21px;
+}
+
+.criterion-type {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.criterion-checkboxes{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.criterion-checkbox{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.button-white {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--basic-light-white);
+  background-color: transparent;
+  border: 2px solid var(--basic-light-white);
+}
+
+.button-white:hover,
+.button-white:focus {
+  background-color: var(--basic-light-white);
+  color: var(--basic-dark-black);
+  border: 2px solid var(--basic-light-white);
+}
+
+.found {
+  color: var(--basic-dark-black);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.sorting {
+  color: var(--basic-dark-black);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.filters {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.filters a {
+  color: var(--basic-light-gray);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  border-bottom: 1px dashed var(--basic-light-blue);
+}
+
+.filters a:hover,
+.filters a:focus {
+  color: var(--basic-light-blue);
+}
+
+.filters a:active {
+  color: var(--basic-dark-black);
+  border-bottom: none;
+}
+
+.icon-up-down {
+  fill: var(--basic-dark-gray);
+}
+
+.icon-up-down:hover,
+.icon-up-down:focus {
+  fill: var(--basic-dark-black);
+}
+
+.icon-up-down:active {
+  fill: var(--basic-light-blue);
+}
+
+.hotels-selection {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.hotel-name {
+  color: var(--basic-dark-black);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.hotel-description {
+  color: var(--basic-black);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.rating {
+  color: var(--basic-light-black2);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  background-color: var(--basic-white);
+}
