@@ -44,6 +44,14 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .main-navigation {
   line-height: 20px;
   color: var(--basic-dark-black);
@@ -73,7 +81,7 @@ img {
   line-height: 21px;
 }
 
-.sedona-description h2 {
+.sedona-description {
   color: var(--basic-dark-black);
   font-size: 21px;
 }
@@ -89,10 +97,9 @@ img {
   line-height: 21px;
 }
 
-h3 {
+.text-h3 {
   font-size: 21px;
 }
-
 
 .about-sedona {
   text-align: center;
