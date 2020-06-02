@@ -250,7 +250,7 @@ img {
 
 .criterion {
   color: var(--basic-light-white); 
-  /*  background-image: url(img/background-catalog.jpg); */
+  background-image: url(../img/background-catalog.jpg);
   background-color: var(--basic-light-blue);
   line-height: 21px;
 }
@@ -260,7 +260,7 @@ img {
   font-weight: 700;
 }
 
-.criterion-checkboxes{
+.criterion-checkboxes {
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -327,6 +327,10 @@ img {
 
 .icon-up-down {
   fill: var(--basic-dark-gray);
+  /* background-image: url(../img/icon-up-dir.svg);
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 10px; */
 }
 
 .icon-up-down:hover,
