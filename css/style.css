@@ -52,16 +52,49 @@ img {
   margin: -1px;
 }
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.main-header-logo {
+  width: 138px;
+  height: 70px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-navigation {
   line-height: 20px;
   color: var(--basic-dark-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-navigation-wrapper {
   background-color: var(--basic-light-white);
+  width: 100%;
 }
 
 .site-navigation {
+  width: 1200px;
+  min-height: 80px;
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -76,9 +109,15 @@ img {
   color: var(--basic-light-brown);
 }
 
+.image a {
+  text-align: center;
+}
+
 .sedona {
   text-align: center;
   line-height: 21px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .sedona-description {
@@ -86,8 +125,10 @@ img {
   font-size: 21px;
 }
 
-.reasons {
+.reasons-list {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .reason {
@@ -95,6 +136,8 @@ img {
   background-color: var(--basic-light-blue);
   text-align: center;
   line-height: 21px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .text-h3 {
@@ -105,14 +148,22 @@ img {
   text-align: center;
   list-style: none;
   line-height: 21px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .about-sedona h3 {
   color: var(--basic-dark-black);
 }
 
-.resons-third-fourth-fifth {
+.resons-third-fourth-fifth-list {
   background-color: var(--basic-dark-white2);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+}
+
+.resons-third-fourth-fifth {
   text-align: center;
   line-height: 21px;
 }
@@ -159,6 +210,10 @@ img {
   text-transform: uppercase;
 }
 
+.date-item {
+  margin: 30px 0;
+}
+
 .date-item input {
   font: inherit;
   background-color: var(--basic-white);
@@ -191,7 +246,14 @@ img {
   background-color: var(--basic-dark-blue);
 }
 
+.main-footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .info {
+  margin: 0;
+  width: 300px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -209,6 +271,8 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-light-blue);
   border: none;
+  width: 150px;
+  margin: 0 auto;
 }
 
 .social-item:hover,
@@ -224,6 +288,13 @@ img {
   width: 115px; 
   height: 41px;
   fill: var(--basic-dark-black2);
+}
+
+.copyright {
+  max-width: 197px;
+  margin: 0;
+  justify-self: end;
+  text-align: center;
 }
 
 .logo-academy:hover,
