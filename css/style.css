@@ -333,6 +333,15 @@ img {
   line-height: 21px;
 }
 
+.form-criterion{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cost-per-day {
+  grid-column: 3/5;
+}
+
 .criterion-type {
   font-size: 16px;
   font-weight: 700;
@@ -347,6 +356,11 @@ img {
 .criterion-checkbox{
   font-size: 14px;
   font-weight: 400;
+}
+
+.search-filters{
+  display: flex;
+  justify-content: space-between;
 }
 
 .button-white {
@@ -424,6 +438,20 @@ img {
   list-style: none;
   margin: 0px;
   padding: 0px;
+}
+
+.hotel {
+  display: grid;
+  grid-template-columns: 134px 1fr 127px;
+  grid-template-rows: repeat(2,1fr);
+}
+
+.hotel-image {
+  grid-row: 1/3;
+}
+
+.hotel-main-description {
+  grid-row: 1/3;
 }
 
 .hotel-name {
