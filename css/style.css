@@ -110,12 +110,12 @@ img {
 }
 
 .sedona-image {
-  width: 456.65px;
-  height: 350.88px;
-  padding-top: 77.35px;
-  padding-right: 371.96px;
-  padding-bottom: 80.76px;
-  padding-left: 371.38px;
+  width: 457px;
+  height: 351px;
+  padding-top: 77px;
+  padding-right: 372px;
+  padding-bottom: 81px;
+  padding-left: 371px;
   background-image: url(../img/intro-mask.svg),
   url(../img/main-background.jpg);
   background-repeat: no-repeat;
@@ -459,12 +459,12 @@ img {
 
 .hotel {
   display: grid;
-  grid-template-columns: 134px 1fr 400px 127px;
+  grid-template-columns: 134px 1fr 127px;
   grid-template-rows: 1fr 1fr min-content;
 }
 
 .hotel-image {
-  grid-row: 1/4;
+  grid-row: 1 / -1;
 }
 
 .hotel-main-description {
@@ -473,6 +473,7 @@ img {
 
 .main-description {
   margin-left: 29px;
+  margin-right: 400px;
   display: grid;
   grid-template-columns: 110px 142px;
   grid-template-rows: 26px 1fr min-content;
