@@ -241,8 +241,6 @@ img {
 .resons-remaining {
   text-align: center;
   line-height: 21px;
-  display: flex;
-  flex-direction: column;
 }
 
 .resons-h3 {
