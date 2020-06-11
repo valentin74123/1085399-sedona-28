@@ -44,6 +44,8 @@ img {
   height: auto;
 }
 
+*, *::before, *::after { box-sizing: border-box; }
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -112,10 +114,11 @@ img {
 .sedona-image {
   width: 457px;
   height: 351px;
+  min-width: 1200px;
+  min-height: 509px;
+  margin: 0 auto;
   padding-top: 77px;
-  padding-right: 372px;
-  padding-bottom: 81px;
-  padding-left: 371px;
+  padding-bottom: 80px;
   background-image: url(../img/intro-mask.svg),
   url(../img/main-background.jpg);
   background-repeat: no-repeat;
@@ -123,30 +126,25 @@ img {
 }
 
 .sedona {
-  
   text-align: center;
   line-height: 21px;
-  grid-template-columns: 1fr;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  flex-direction: column
+  margin: 0 auto;
+  
 }
 
 .sedona-description {
-  margin: 0px;
+  margin: 0 auto;
   color: var(--basic-dark-black);
   font-size: 21px;
   padding-top: 43px;
-  
   max-width: 470px;
-  min-height: 80px;
 }
 
 .sedona-description-text {
+  max-width: 519px;
   padding-top: 17px;
   padding-bottom: 51px;
-  margin: 0px;
+  margin: 0 auto;
 }
 
 .reasons-list {
@@ -161,25 +159,20 @@ img {
   text-align: center;
   line-height: 21px;
   display: flex;
-  justify-content: space-between;
 }
 
-.resons-text-h3-first {
-  max-width: 122px;
-  padding-left: 139px;
-  padding-right: 139px;
-  padding-top: 47px;
-  padding-bottom: 25px;
-  margin: 0px;
+.resons-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 400px;
 }
 
-.resons-text-h3-second {
+.resons-text-h3 {
   max-width: 151px;
-  padding-left: 126px;
-  padding-right: 125px;
-  padding-top: 47px;
   padding-bottom: 25px;
-  margin: 0px;
+  margin: 0 auto;
 }
 
 .reson-text-p-first::before {
@@ -198,20 +191,9 @@ img {
   text-align: center;
 }
 
-.reson-text-p-first {
-  max-width: 300px;
-  padding-bottom: 49px;
-  padding-left: 51px;
-  padding-right: 50px;
-  margin: 0px;
-}
-
-.reson-text-p-second {
-  max-width: 302px;
-  padding-bottom: 51px;
-  padding-left: 51px;
-  padding-right: 50px;
-  margin: 0px;
+.reson-text-p {
+  max-width: 301px;
+  margin: 0 auto;
 }
 
 .photo-sedona img{
@@ -220,7 +202,7 @@ img {
 
 .text-h3 {
   font-size: 21px;
-  margin: 0px;
+  margin: 0 auto;
 }
 
 .about-sedona {
@@ -229,7 +211,7 @@ img {
   line-height: 21px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 0px;
+  padding: 0;
 }
 
 .about-sedona h3 {
@@ -242,38 +224,35 @@ img {
 }
 
 .about-sedona-p {
-  margin: 0px;
+  max-width: 297px;
+  margin: 0 auto;
   padding-top:25px;
   padding-bottom: 82px;
 }
 
-.resons-third-fourth-fifth-list {
-  padding: 0px;
+.resons-remaining-list {
+  padding: 0;
   background-color: var(--basic-dark-white2);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
 }
 
-.resons-third-fourth-fifth {
+.resons-remaining {
   text-align: center;
   line-height: 21px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-.resons-h3-third {
+.resons-h3 {
   max-width: 119px;
 }
 
-.resons-text-p-third::before,
-.resons-text-p-fourth::before,
-.resons-text-p-fifth::before {
+.resons-text-p::before {
   display: block;
   margin-bottom: 23px;
   padding: 0;
-  
   text-align: center;
 }
 
@@ -289,19 +268,7 @@ img {
   content: "—№5—";
 }
 
-.resons-h3-fourth {
-  max-width: 99px;
-}
-
-.resons-h3-fifth {
-  max-width: 98px;
-}
-
-.resons-text-p-third {
-  max-width: 208px;
-}
-
-.resons-text-p-fourth {
+.resons-text-p {
   max-width: 261px;
 }
 
@@ -310,13 +277,13 @@ img {
 }
 
 .resons-h3 {
-  margin: 0px;
+  margin: 0 auto;
   padding-top: 47px;
   padding-bottom: 25px;
 }
 
 .resons-text-p {
-  margin: 0px;
+  margin: 0 auto;
   padding-bottom: 54px;
 }
 
@@ -327,10 +294,9 @@ img {
 }
 
 .alleged-dates-text {
-  min-height: 150px;
+  padding-bottom: 48px;
   max-width: 435px;
-  padding-left: 383px;
-  padding-right: 382px;
+  margin: 0 auto;
 }
 
 .interested-in {
@@ -352,7 +318,9 @@ img {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  padding: 30px 125px;
+  min-width: 568px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .button-brown:hover,
@@ -427,13 +395,13 @@ img {
   font-weight: 700;
   color: var(--basic-dark-black);
   display: flex;
-  margin: 0px;
+  margin: 0 auto;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.octothorpe {
+.hashtag {
   padding-bottom: 9px;
 }
 
@@ -443,11 +411,13 @@ img {
 
 .social-list {
   display: flex;
-  margin: 0px;
+  margin: 0 auto;
+  padding: 0;
   align-items: center;
   justify-content: center;
   padding-bottom: 36px;
   padding-top: 36px;
+  flex-wrap: wrap;
 }
 
 .social-item {
@@ -484,9 +454,7 @@ img {
   display: flex;
   margin: 0;
   justify-self: end;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  padding-right: 138px;
 }
 
 .website-by {
@@ -499,7 +467,6 @@ img {
 .htmla-logo {
   padding-top: 37px;
   padding-bottom: 35px;
-  padding-right: 138px;
 }
 
 .logo-academy:hover,
