@@ -96,9 +96,18 @@ img {
 
 .site-navigation {
   min-height: 56px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+}
+
+.site-navigation ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
 }
 
 .site-navigation a {
@@ -116,10 +125,9 @@ img {
   color: var(--basic-light-gray);
 }
 
-.active a {
+.navigation-active a {
   color: var(--basic-light-brown);
 }
-
 
 .sedona-image {
   width: 457px;
@@ -131,7 +139,7 @@ img {
   padding-bottom: 80px;
   background-image: url(../img/intro-mask.svg),
   url(../img/main-background.jpg);
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, no-repeat;
   background-position: bottom, center;
 }
 
@@ -242,7 +250,7 @@ img {
   padding: 0;
   background-color: var(--basic-dark-white2);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   list-style: none;
 }
 
@@ -329,6 +337,10 @@ img {
   padding-bottom: 30px;
 }
 
+.button-interested-in:active span {
+  opacity: 0.3;
+}
+
 .button-brown:hover,
 .button-brown:focus {
   background-color: var(--basic-brown);
@@ -338,9 +350,142 @@ img {
   background-color: var(--basic-dark-brown);
 }
 
+.section-map {
+  background-image: url(../img/map.jpg);
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: var(--basic-light-white);
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.section-date-form {
+  display: flex;
+  max-width: 568px;
+}
+
+.modal-date {
+  display: none;
+  top: 2190px;
+  bottom: auto;
+}
+
 .date-form {
   font-weight: 700;
   line-height: 26px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  margin: 0 auto;
+}
+
+.date-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  align-items: center;
+}
+
+.date-item button {
+  border: none;
+  background-color: transparent;
+}
+
+.calendar-date {
+  min-width: 346px;
+  background-color: var(--basic-white);
+  display: grid;
+  grid-template-columns: 1fr 37px;
+}
+
+.calendar-date input {
+  border: none;
+  background-color: transparent;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  padding-left: 13px;
+}
+
+.calendar-button path {
+  fill: var(--basic-gray);
+}
+
+.calendar-button:hover path,
+.calendar-button:focus path {
+  fill: var(--basic-dark-black);
+}
+
+.calendar-button:active path {
+  fill: var(--basic-light-blue);
+}
+
+.number-of-people {
+  position: relative;
+  background-color: var(--basic-white);
+  min-width: 114px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.number-of-people input {
+  width: 36px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  margin: 0 auto;
+}
+
+.button-minus::before {
+  position: absolute;
+  content: "";
+  top: 18px;
+  left: 13px;
+  width: 12px;
+  height: 3px;
+  background-color: var(--basic-gray);
+}
+
+.button-plus::before {
+  position: absolute;
+  content: "";
+  top: 14px;
+  left: 93px;
+  width: 3px;
+  height: 11px;
+  background-color: var(--basic-gray);
+}
+
+.button-plus::after {
+  position: absolute;
+  content: "";
+  top: 18px;
+  left: 89px;
+  width: 11px;
+  height: 3px;
+  background-color: var(--basic-gray);
+}
+
+.button-minus:hover::before,
+.button-minus:focus::before,
+.button-plus:hover::before,
+.button-plus:focus::before,
+.button-plus:hover::after,
+.button-plus:focus::after {
+  background-color: var(--basic-dark-black);
+}
+
+.button-minus:active::before,
+.button-plus:active::before,
+.button-plus:active::after {
+ background-color: var(--basic-dark-blue);
 }
 
 .date-form input[type="text"],
@@ -350,22 +495,53 @@ img {
   text-transform: uppercase;
 }
 
-.date-item {
-  margin: 30px 0;
-}
-
-.date-item input {
+.calendar-date {
   font: inherit;
   background-color: var(--basic-white);
 }
 
-.date-item input:hover {
+.calendar-date:hover,
+.button-minus:hover,
+.button-plus:hover {
   background-color: var(--basic-dark-white);
 }
 
-.date-item input:focus {
-  background-color: transparent;
-  border: 2px solid var(--basic-light-gray2);
+.date-item :active, 
+.date-item :hover, 
+.date-item :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.date-item :focus {
+  outline: 2px solid var(--basic-light-gray2);
+  outline-offset: -2px;
+  background-color: var(--basic-light-white);
+}
+
+.number-of-people {
+  max-width: 114px;
+}
+
+.number-of-people input {
+  background-color: var(--basic-white);
+}
+
+.button-light-blue-search {
+  min-width: 458px;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.button-light-blue-search:active span {
+  opacity: 0.3;
+}
+
+.search-text {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
 }
 
 .button-light-blue {
@@ -387,8 +563,11 @@ img {
 }
 
 .main-footer .container {
+  margin-top: -120px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--basic-light-white);
+  opacity: 0.9;
 }
 
 .info {
@@ -424,6 +603,7 @@ img {
   padding-bottom: 36px;
   padding-top: 36px;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 .social-item {
@@ -448,6 +628,14 @@ img {
 
 .social-item:active {
   background-color: var(--basic-dark-blue);
+}
+
+.social-item:active path {
+  opacity: 0.3;
+}
+
+.social-item a {
+  padding-top: 5px;
 }
 
 .logo-academy {
@@ -482,19 +670,6 @@ img {
 
 .logo-academy:active { 
   fill: var(--basic-light-gray);
-}
-
-.calendar {
-  fill: var(--basic-gray);
-}
-
-.calendar:hover,
-.calendar:focus {
-  fill: var(--basic-dark-black);
-}
-
-.calendar:active {
-  fill: var(--basic-light-blue);
 }
 
 .criterion {
@@ -594,16 +769,14 @@ img {
 
 .scale {
   height: 2px;
-  background-color: var(--basic-light-white);
+  background-color: rgb(255, 255, 255, 0.3);;
   mix-blend-mode: normal;
-  opacity: 0.3;
 }
 
 .bar {
-  width: 70%;
+  width: 75%;
   height: 2px;
   background-color: var(--basic-light-white);
-  
 }
 
 .range-controls .toggle {
@@ -650,7 +823,7 @@ img {
   content: "";
   width: 2px;
   height: 22px;
-  background-color: #FFFFFF;
+  background-color: var(--basic-light-white);
 }
 
 .price-controls label {
@@ -660,13 +833,12 @@ img {
 
 .price-controls input {
   width: 50px;
-  margin-left: 10px;
   text-align: center;
-  color: #283136;
-  border: none;
-  border-radius: 5px;
+  color: var(--basic-light-white);
   font-family: inherit;
   font-size: inherit;
+  border: none;
+  background-color: transparent;
 }
 /*слайдер - конец*/
 
@@ -702,7 +874,6 @@ img {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  
 }
 
 .search-filters-all::after {
@@ -779,17 +950,24 @@ img {
   background-color: transparent;
 }
 
-.icon-up-down {
+.button-up-down path{
   fill: var(--basic-dark-gray);
 }
 
-.icon-up-down:hover,
-.icon-up-down:focus {
+.button-up-down:hover path,
+.button-up-down:focus path{
   fill: var(--basic-dark-black);
 }
 
-.icon-up-down:active {
+.button-up-down:active path{
   fill: var(--basic-light-blue);
+}
+
+.sorting-filters-active a,
+.button-up-down-active path {
+  color: var(--basic-light-blue);
+  fill: var(--basic-light-blue);
+  border-bottom: none;
 }
 
 .hotels-selection {
@@ -866,11 +1044,21 @@ img {
 
 .detail-button {
   min-width: 110px;
+  font-weight: bold;
+}
+
+.detail-button:active span {
+  opacity: 0.3;
 }
 
 .reservation-button {
   margin-left: 6px;
   min-width: 142px;
+  font-weight: bold;
+}
+
+.reservation-button:active span {
+  opacity: 0.3;
 }
 
 .rating-stats {
