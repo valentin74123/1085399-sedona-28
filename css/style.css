@@ -77,12 +77,7 @@ img {
   padding: 0px;
 }
 
-.main-navigation-wrapper .container {
-  justify-content: space-between;
-}
-
 .main-navigation {
-  line-height: 20px;
   color: var(--basic-dark-black);
   display: flex;
   flex-direction: column;
@@ -95,7 +90,7 @@ img {
 }
 
 .site-navigation {
-  min-height: 56px;
+  max-width: 1055px;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -104,16 +99,23 @@ img {
   flex-wrap: wrap;
 }
 
-.site-navigation ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
+.site-navigation li {
+  min-width: 227px;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: auto;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  text-align: right;
 }
 
 .site-navigation a {
   color: var(--basic-dark-black);
   display: block;
-  padding: 14px 72px 16px 73px;
+  padding: 15px 0;
 }
 
 .site-navigation a:hover,
@@ -129,39 +131,41 @@ img {
   color: var(--basic-light-brown);
 }
 
-.sedona-image {
-  width: 457px;
-  height: 351px;
-  min-width: 1200px;
-  min-height: 509px;
-  margin: 0 auto;
-  padding-top: 77px;
-  padding-bottom: 80px;
+.sedona-image-bg {
+  width: 100%;
+  height: 509px;
   background-image: url(../img/intro-mask.svg),
   url(../img/main-background.jpg);
   background-repeat: no-repeat, no-repeat;
-  background-position: bottom, center;
+  background-position:  50% 100.5%, center;
+}
+
+.sedona-image {
+  margin-top: 77px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 457px;
+  height: 351px;
 }
 
 .sedona {
   text-align: center;
-  line-height: 21px;
+  line-height: 26px;
   margin: 0 auto;
-  
+  padding-top: 41px;
+  padding-bottom: 51px;
 }
 
 .sedona-description {
   margin: 0 auto;
   color: var(--basic-dark-black);
   font-size: 21px;
-  padding-top: 43px;
   max-width: 470px;
 }
 
 .sedona-description-text {
   max-width: 519px;
-  padding-top: 17px;
-  padding-bottom: 51px;
+  padding-top: 42px;
   margin: 0 auto;
 }
 
@@ -337,10 +341,6 @@ img {
   padding-bottom: 30px;
 }
 
-.button-interested-in:active span {
-  opacity: 0.3;
-}
-
 .button-brown:hover,
 .button-brown:focus {
   background-color: var(--basic-brown);
@@ -348,19 +348,23 @@ img {
 
 .button-brown:active {
   background-color: var(--basic-dark-brown);
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .section-map {
   background-image: url(../img/map.jpg);
 }
 
+.search-hotels {
+  position: relative;
+}
+
 .modal {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
+  left:50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
   background-color: var(--basic-light-white);
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
@@ -371,17 +375,15 @@ img {
 }
 
 .modal-date {
-  display: none;
-  top: 2190px;
+  /*display: none;*/
+  top: 86px;
   bottom: auto;
 }
 
 .date-form {
   font-weight: 700;
   line-height: 26px;
-  padding-top: 55px;
-  padding-bottom: 55px;
-  margin: 0 auto;
+  padding: 55px;
 }
 
 .date-item {
@@ -506,14 +508,7 @@ img {
   background-color: var(--basic-dark-white);
 }
 
-.date-item :active, 
-.date-item :hover, 
-.date-item :focus {
-  outline: 0;
-  outline-offset: 0;
-}
-
-.date-item :focus {
+.date-item *:focus {
   outline: 2px solid var(--basic-light-gray2);
   outline-offset: -2px;
   background-color: var(--basic-light-white);
@@ -529,13 +524,7 @@ img {
 
 .button-light-blue-search {
   min-width: 458px;
-  padding: 0;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.button-light-blue-search:active span {
-  opacity: 0.3;
+  padding: 16px 0;
 }
 
 .search-text {
@@ -560,6 +549,7 @@ img {
 
 .button-light-blue:active {
   background-color: var(--basic-dark-blue);
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .main-footer .container {
@@ -638,7 +628,7 @@ img {
   padding-top: 5px;
 }
 
-.logo-academy {
+.htmla-logo path {
   width: 115px; 
   height: 41px;
   fill: var(--basic-dark-black2);
@@ -663,12 +653,12 @@ img {
   padding-bottom: 35px;
 }
 
-.logo-academy:hover,
-.logo-academy:focus {
+.htmla-logo:hover path,
+.htmla-logo:focus path {
   fill: var(--basic-light-blue);
 }
 
-.logo-academy:active { 
+.htmla-logo:active path { 
   fill: var(--basic-light-gray);
 }
 
@@ -769,7 +759,7 @@ img {
 
 .scale {
   height: 2px;
-  background-color: rgb(255, 255, 255, 0.3);;
+  background-color: rgba(255, 255, 255, 0.3);
   mix-blend-mode: normal;
 }
 
@@ -1047,18 +1037,10 @@ img {
   font-weight: bold;
 }
 
-.detail-button:active span {
-  opacity: 0.3;
-}
-
 .reservation-button {
   margin-left: 6px;
   min-width: 142px;
   font-weight: bold;
-}
-
-.reservation-button:active span {
-  opacity: 0.3;
 }
 
 .rating-stats {
