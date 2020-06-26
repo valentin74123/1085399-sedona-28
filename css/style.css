@@ -77,8 +77,6 @@ input[type=number] {
 
 .main-header-logo {
   position: absolute;
-  width: 138px;
-  height: 70px;
 }
 
 .container {
@@ -154,8 +152,6 @@ input[type=number] {
   margin-top: 77px;
   margin-left: 50%;
   transform: translateX(-50%);
-  width: 457px;
-  height: 351px;
 }
 
 .sedona {
@@ -401,26 +397,26 @@ input[type=number] {
 
 @keyframes bounce {
   0% {
-    transform: translateY(0);
+    transform: translateX(-50%) translateY(0);
   }
 
   70% {
-    transform: translateY(20%);
+    transform: translateX(-50%) translateY(20%);
   }
 
   90% {
-    transform: translateY(10%);
+    transform: translateX(-50%) translateY(10%);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translateX(-50%) translateY(0);
   }
 }
 
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
 
   10%,
@@ -428,14 +424,14 @@ input[type=number] {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translateX(-60%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translateX(-40%);
   }
 }
 
@@ -612,11 +608,14 @@ input[type=number] {
 }
 
 .main-footer .container {
-  margin-top: -120px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: var(--basic-light-white);
   opacity: 0.9;
+}
+
+.footer-margin {
+  margin-top: -120px;
 }
 
 .info {
