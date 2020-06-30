@@ -8,8 +8,8 @@ let arrivalDate= searchPopupForm.querySelector(".search-arrival-date");
 let departureDate = searchPopupForm.querySelector(".search-departure-date");
 
 
-var isStorageSupport = true;
-var storage = "";
+let isStorageSupport = true;
+let storage = "";
 
 try {
   storage = localStorage.getItem("arrival-date");
@@ -20,7 +20,6 @@ try {
 
 
 searchLink.addEventListener("click", function (evt) {
-    console.log(isFormOpen);
     if (isFormOpen === true){
         searchPopupForm.classList.remove("modal-show");
         searchPopupForm.classList.remove("modal-error");
