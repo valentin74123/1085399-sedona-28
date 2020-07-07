@@ -10,14 +10,18 @@
   --basic-light-gray2: #E5E5E5;
   --basic-gray: #A9A9A9;
   --basic-dark-gray: #CACACA;
+  --basic-dark-gray2: rgba(255, 255, 255, 0.3);
   --basic-light-brown: #766357;
   --basic-brown: #604E43;
   --basic-dark-brown: #503E33;
   --basic-light-black: #6A6A6A;
   --basic-light-black2: #666666;
   --basic-black: #333333;
+  --basic-black2: #283136;
   --basic-dark-black: #000000;
   --basic-dark-black2: #231F20;
+  --basic-dark-shadow: rgba(0, 1, 1, 0.2);
+  --basic-dark-shadow2: rgba(0, 1, 1, 0.15);
 }
 
 body {
@@ -30,9 +34,9 @@ body {
   font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--basic-light-white);
+  background-color: var(--basic-light-gray);
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
 }
 
 a {
@@ -83,6 +87,8 @@ input[type=number] {
   width: 1200px;
   margin: 0 auto;
   padding: 0px;
+  box-shadow: 0px 5px 15px var(--basic-dark-shadow);
+  background-color: var(--basic-light-white);
 }
 
 .main-navigation {
@@ -94,7 +100,8 @@ input[type=number] {
 
 .main-navigation-wrapper {
   background-color: var(--basic-light-white);
-  width: 100%;
+  width: 1200px;
+  box-shadow: 0px 5px 15px var(--basic-dark-shadow);
 }
 
 .site-navigation {
@@ -105,6 +112,9 @@ input[type=number] {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
 }
 
 .site-navigation li {
@@ -142,6 +152,7 @@ input[type=number] {
 .sedona-image-bg {
   width: 100%;
   height: 509px;
+  background-color: var(--basic-light-gray2);
   background-image: url(../img/intro-mask.svg),
   url(../img/main-background.jpg);
   background-repeat: no-repeat, no-repeat;
@@ -160,6 +171,7 @@ input[type=number] {
   margin: 0 auto;
   padding-top: 41px;
   padding-bottom: 51px;
+  background-color: var(--basic-light-white);
 }
 
 .sedona-description {
@@ -189,20 +201,20 @@ input[type=number] {
   display: flex;
 }
 
-.resons-text {
+.reasons-text {
   padding-top: 47px;
   padding-bottom: 53px;
   min-width: 400px;
 }
 
-.resons-text-h3 {
+.reasons-text-h3 {
   max-width: 151px;
   padding-bottom: 26px;
   margin: 0 auto;
   line-height: 21px;
 }
 
-.reson-text-p-first::before {
+.reason-text-p-first::before {
   display: block;
   margin-bottom: 25px;
   padding: 0;
@@ -210,7 +222,7 @@ input[type=number] {
   text-align: center;
 }
 
-.reson-text-p-second::before {
+.reason-text-p-second::before {
   display: block;
   margin-bottom: 25px;
   padding: 0;
@@ -218,7 +230,7 @@ input[type=number] {
   text-align: center;
 }
 
-.reson-text-p {
+.reason-text-p {
   max-width: 301px;
   margin: 0 auto;
 }
@@ -239,10 +251,33 @@ input[type=number] {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 0;
+  background-color: var(--basic-light-white);
 }
 
 .about-sedona h3 {
   color: var(--basic-dark-black);
+  padding-top: 160px;
+}
+
+.about-sedona li:nth-child(1) {
+  background-image: url(../img/icon-house.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 60px;
+}
+
+.about-sedona li:nth-child(2) {
+  background-image: url(../img/icon-food.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 61px;
+}
+
+.about-sedona li:nth-child(3) {
+  background-image: url(../img/icon-souvenirs.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 56px;
 }
 
 .about-sedona-svg {
@@ -261,7 +296,7 @@ input[type=number] {
   padding-bottom: 82px;
 }
 
-.resons-remaining-list {
+.reasons-remaining-list {
   padding: 0;
   background-color: var(--basic-dark-white2);
   display: grid;
@@ -269,49 +304,49 @@ input[type=number] {
   list-style: none;
 }
 
-.resons-remaining {
+.reasons-remaining {
   text-align: center;
   line-height: 21px;
 }
 
-.resons-h3 {
+.reasons-h3 {
   max-width: 119px;
 }
 
-.resons-text-p::before {
+.reasons-text-p::before {
   display: block;
   margin-bottom: 23px;
   padding: 0;
   text-align: center;
 }
 
-.resons-text-p-third::before {
+.reasons-text-p-third::before {
   content: "— №3 —";
 }
 
-.resons-text-p-fourth::before {
+.reasons-text-p-fourth::before {
   content: "— №4 —";
 }
 
-.resons-text-p-fifth::before {
+.reasons-text-p-fifth::before {
   content: "— №5 —";
 }
 
-.resons-text-p {
+.reasons-text-p {
   max-width: 261px;
 }
 
-.resons-text-p-fifth {
+.reasons-text-p-fifth {
   max-width: 247px;
 }
 
-.resons-h3 {
+.reasons-h3 {
   margin: 0 auto;
   padding-top: 47px;
   padding-bottom: 25px;
 }
 
-.resons-text-p {
+.reasons-text-p {
   margin: 0 auto;
   padding-bottom: 54px;
 }
@@ -320,6 +355,7 @@ input[type=number] {
   text-align: center;
   line-height: 24px;
   padding-top: 30px;
+  background-color: var(--basic-light-white);
 }
 
 .alleged-dates-text {
@@ -364,7 +400,7 @@ input[type=number] {
 
 .button-brown:active {
   background-color: var(--basic-dark-brown);
-  color: rgba(255, 255, 255, 0.3)
+  color: var(--basic-dark-gray2);
 }
 
 .section-map {
@@ -384,18 +420,18 @@ input[type=number] {
   transform: translateX(-50%);
   margin: 0 auto;
   background-color: var(--basic-light-white);
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
-}
-
-.section-date-form {
-  display: flex;
-  max-width: 568px;
+  box-shadow: 0px 7px 15px var(--basic-dark-shadow2);
 }
 
 .modal-date {
   display: none;
   top: 86px;
   bottom: auto;
+}
+
+.section-date-form {
+  display: flex;
+  max-width: 568px;
 }
 
 .modal-show {
@@ -507,7 +543,7 @@ input[type=number] {
   padding-top: 6px;
   padding-bottom: 6px;
   text-align: center;
-  color: #283136;
+  color: var(--basic-black2);
   border: none;
   margin: 0 auto;
 }
@@ -598,18 +634,6 @@ input[type=number] {
   background-color: var(--basic-white);
 }
 
-.button-light-blue-search {
-  min-width: 458px;
-  padding: 16px 0;
-  margin-top: 27px;
-}
-
-.search-text {
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 26px;
-}
-
 .button-light-blue {
   font: inherit;
   text-align: center;
@@ -619,6 +643,15 @@ input[type=number] {
   border: none;
 }
 
+.button-light-blue-search {
+  min-width: 458px;
+  margin-top: 27px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  padding: 16px 0;
+}
+
 .button-light-blue:hover,
 .button-light-blue:focus {
   background-color: var(--basic-blue);
@@ -626,7 +659,7 @@ input[type=number] {
 
 .button-light-blue:active {
   background-color: var(--basic-dark-blue);
-  color: rgba(255, 255, 255, 0.3)
+  color: var(--basic-dark-gray2);
 }
 
 .main-footer .container {
@@ -658,11 +691,6 @@ input[type=number] {
 
 .hashtag {
   padding-bottom: 9px;
-}
-
-.info-catalog {
-  align-items: flex-start;
-  padding-left: 90px;
 }
 
 .info a {
@@ -726,10 +754,6 @@ input[type=number] {
   padding-right: 138px;
 }
 
-.copyright-catalog {
-  padding-right: 100px;
-}
-
 .website-by {
   margin: 0px;
   padding-top: 50px;
@@ -755,6 +779,7 @@ input[type=number] {
   color: var(--basic-light-white); 
   background-image: url(../img/background-catalog.jpg);
   background-color: var(--basic-light-blue);
+  background-size: cover;
   line-height: 21px;
 }
 
@@ -829,6 +854,32 @@ input[type=number] {
   background-image: url("../img/checkbox-on.svg");
 }
 
+.input-checkbox:disabled + label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off-disabled.svg");
+}
+
+.input-checkbox:disabled:checked + label::before {
+  left: -40px;
+  width: 27px;
+  background-image: url("../img/checkbox-on-disabled.svg");
+}
+
+.input-checkbox:focus + label::before {
+  outline: 2px solid var(--basic-dark-black);
+  outline-offset: -2px;
+}
+
+.input-checkbox:focus:checked + label::before {
+  outline: 2px solid var(--basic-dark-black);
+  outline-offset: -2px;
+}
+
 /*слайдер - начало*/
 .range-filter {
   width: 318px;
@@ -849,7 +900,7 @@ input[type=number] {
 
 .scale {
   height: 2px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--basic-dark-gray2);
   mix-blend-mode: normal;
 }
 
@@ -873,11 +924,15 @@ input[type=number] {
 .range-controls .toggle-min:hover,
 .range-controls .toggle-min:focus {
   transform: scale(1.2);
+  outline: 1px solid var(--basic-dark-black);
+  outline-offset: -1px;
 }
 
 .range-controls .toggle-max:hover,
 .range-controls .toggle-max:focus {
   transform: scale(1.2);
+  outline: 1px solid var(--basic-dark-black);
+  outline-offset: -1px;
 }
 
 .range-controls .toggle-min {
@@ -891,7 +946,7 @@ input[type=number] {
 .price-controls {
   display: flex;
   justify-content: space-around;
-  border: 2px solid #FFFFFF;
+  border: 2px solid var(--basic-light-white);
   box-sizing: border-box;
   border-radius: 2px;
   padding-top: 6px;
@@ -932,8 +987,8 @@ input[type=number] {
 }
 
 .price-controls input:focus {
-  border: 2px solid var(--basic-light-white);
-  border-radius: 2px;
+  outline: 1px solid var(--basic-light-white);
+  outline-offset: -1px;
 }
 /*слайдер - конец*/
 
@@ -943,8 +998,8 @@ input[type=number] {
   padding-top: 6px;
   padding-bottom: 6px;
   text-transform: uppercase;
-  display: flex;
-  justify-content: center;
+  margin-left: 84px;
+  
 }
 
 .button-white {
@@ -1028,7 +1083,7 @@ input[type=number] {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
-  border-bottom: 1px dashed var(--basic-light-blue);
+  border-bottom: 1px dotted var(--basic-light-blue);
 }
 
 .filters a:hover,
@@ -1041,11 +1096,8 @@ input[type=number] {
   border-bottom: none;
 }
 
-.buttons-up-down {
-  max-width: 50px;
-}
-
-.button-up-down {
+.button-up-down svg {
+  width: 20px;
   border: none;
   background-color: transparent;
 }
@@ -1096,7 +1148,7 @@ input[type=number] {
 .hotel-image {
   padding-top: 6px;
   margin-right: 29px;
-  align-items: flex-end;
+  
 }
 
 .hotel-main-description {
@@ -1106,25 +1158,28 @@ input[type=number] {
 
 .main-description {
   display: grid;
-  grid-row: 1 / -1;
+  
 }
 
 .hotel-name {
-  color: var(--basic-dark-black);
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   margin: 0;
   padding: 0;
-  grid-column: 1/3;
+  grid-column: 1/7;
 }
 
-.hotel-name:hover,
-.hotel-name:focus {
+.hotel-name a {
+  color: var(--basic-dark-black);
+}
+
+.hotel-name a:hover,
+.hotel-name a:focus {
   color: var(--basic-light-blue);
 }
 
-.hotel-name:active {
+.hotel-name a:active {
   color: var(--basic-light-gray);
 }
 
@@ -1138,33 +1193,41 @@ input[type=number] {
   padding-top: 7px;
 }
 
-.description-price {
-  margin-left: 6px;
-}
-
 .detail-button {
   min-width: 110px;
   font-weight: bold;
+  grid-row: 3 / 4;
+  margin-right: 6px;
 }
 
 .reservation-button {
-  margin-left: 6px;
+  margin-right: 6px;
   min-width: 142px;
   font-weight: bold;
+  grid-row: 3 / 4;
 }
 
 .rating-stats {
-  margin-left: 522px;
+  margin-left: auto;
   margin-top: 5px;
 }
 
-.stars {
-  display: flex;
-  justify-content: flex-end;
+.stars-amara {
+  background-image: url(../img/star.svg), url(../img/star.svg), url(../img/star.svg), url(../img/star.svg);
+  background-repeat: no-repeat;
+  background-position-x: 20px, center, 70px,  right;
 }
 
-.star {
-  padding-left: 5px;
+.stars-desert {
+  background-image: url(../img/star.svg), url(../img/star.svg), url(../img/star.svg);
+  background-repeat: no-repeat;
+  background-position-x: center, 70px,  right;
+}
+
+.stars-villas {
+  background-image: url(../img/star.svg), url(../img/star.svg);
+  background-repeat: no-repeat;
+  background-position-x: 70px,  right;
 }
 
 .rating {
@@ -1176,7 +1239,7 @@ input[type=number] {
   grid-column: 4/5;
   grid-row: 3/4;
   min-width: 110px;
-  margin-top: 47px;
+  margin-top: 65px;
 }
 
 .rating-text {
