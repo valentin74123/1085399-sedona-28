@@ -58,16 +58,6 @@ img {
   margin: -1px;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
 .page {
   height: 100%;
 }
@@ -413,6 +403,20 @@ input[type=number] {
   position: relative;
 }
 
+.date-form input::-webkit-outer-spin-button,
+.date-form input::-webkit-inner-spin-button,
+.form-criterion input::-webkit-outer-spin-button,
+.form-criterion input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  appearance: none;
+}
+
+.date-form input[type=number],
+.form-criterion input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .modal {
   position: absolute;
   top: 0;
@@ -423,15 +427,15 @@ input[type=number] {
   box-shadow: 0px 7px 15px var(--basic-dark-shadow2);
 }
 
+.section-date-form {
+  display: flex;
+  max-width: 568px;
+}
+
 .modal-date {
   display: none;
   top: 86px;
   bottom: auto;
-}
-
-.section-date-form {
-  display: flex;
-  max-width: 568px;
 }
 
 .modal-show {

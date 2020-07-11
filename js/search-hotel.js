@@ -1,6 +1,6 @@
 var searchLink = document.querySelector(".button-interested-in");
 var searchPopupForm = document.querySelector(".modal-date");
-var isFormOpen = false; 
+var isFormOpen = true; 
 var searchForm = searchPopupForm.querySelector(".date-form");
 var arrivalDate= searchPopupForm.querySelector(".search-arrival-date");
 var departureDate = searchPopupForm.querySelector(".search-departure-date");
